@@ -6,7 +6,38 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
+    <div class="container">
+        <div class="top-nav">
+            <h1>Libary</h1>
+            <button id="show-form-btn">Add a new book</button>
+        </div>
+        
+        <div class="gallery">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+    <dialog>
+        <div class="form">
+            <button id="close-form-btn">Close</button>
+            <form id="add-form" action="#" onsubmit="return false;">
+                <label for="book-name">Book Name</label>
+                <input type="text" name="book-name" id="book-name">
+                <label for="author-name">Author Name</label>
+                <input type="text" name="author-name" id="author-name">
+                <label for="book-pages">Book Length (pages)</label>
+                <input type="number" name="book-pages" id="book-pages">
+                <label for="read-check">Have you read the book?</label>
+                <input type="checkbox" name="read-check" id="read-check">
+                <button id="submit-btn"type="submit">Submit</button>
+            </form>
+        </div>
     
+    </dialog>
+
+
+
     <script src="./main.js"></script>
 </body>
 </html>

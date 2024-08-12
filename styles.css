@@ -33,12 +33,21 @@ body {
 }
 
 .box {
-    background-color: burlywood;
     height: 250px;
     margin: 0; /* Reset margins if needed */
     padding: 10px; /* Optional padding */
     border-radius: 15px;
     padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    padding: 16px; /* Optional: to give some padding inside the card */
+    background-color: #fff; /* Optional: to set a background color for the card */
+    border-radius: 8px; /* Optional: to round the corners of the card */
+}
+
+.box:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .box > * {
@@ -85,7 +94,7 @@ button {
     border: none;
     background: #f44336; /* Optional background color */
     color: white;
-    padding: 10px;
+    padding: 10px !important;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;

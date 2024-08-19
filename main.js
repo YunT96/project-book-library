@@ -36,18 +36,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const myLibrary = [];
 
-    //constructor function
-    function Book(name, author, pages, read) {
-        this.book = name;
-        this.author = author;
-        this.pages = pages;
-        this.hasRead = read;
-        this.id = null;
+  
+    class Book {
+        constructor(name, author, pages, read) {
+            this.book = name;
+            this.author = author;
+            this.pages = pages;
+            this.hasRead = read;
+            this.id = null;
+        }
+
+        toggleRead() {
+            this.hasRead = !this.hasRead;
+        }
     }
 
-    Book.prototype.toggleRead = function () {
-        this.hasRead = !this.hasRead;
-    };
+
 
     function addBookToLibrary() {
         const container = document.querySelector('.gallery');
